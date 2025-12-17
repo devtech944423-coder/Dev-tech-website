@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
@@ -21,16 +20,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <Image
-              src="/images/logo.png"
-              alt="Dev Tech Enterprises"
-              width={180}
-              height={48}
-              className="h-10 sm:h-11 md:h-12 w-auto object-contain"
-              priority
-            />
-          </Link>
+          <Link href="/" className="flex items-center gap-2">
+          <img
+  src="/images/logo.png"
+  alt="Dev Tech Enterprises"
+  width="140"
+  height="40"
+  className="object-contain"
+/>
+
+</Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
